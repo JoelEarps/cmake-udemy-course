@@ -9,19 +9,13 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-option(COMPILE_EXECTUABLE "Whether to compile exectuable" OFF)
-
 # Make a vairable using set - make sure it does not clash with reserved names
 set(LIBRARY_NAME "Library")
-set(EXE_NAME "Exectubale")
+set(EXE_NAME "Exectuable")
 
 add_subdirectory(src)
-
-if (COMPILE_EXECUTABLE)
-    add_subdirectory(app)
-else()
-    message("W/O exe. compiling")
-endif()
+add_subdirectory(configured)
+add_subdirectory(app)
 
 
 
