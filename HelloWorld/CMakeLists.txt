@@ -11,7 +11,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Make a vairable using set - make sure it does not clash with reserved names
 set(LIBRARY_NAME "Library")
-set(EXE_NAME "Exectuable")
+set(EXE_NAME "Joels_App")
 
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 include(Add_Git_SM)
@@ -19,6 +19,7 @@ include(Add_Git_SM)
 add_git_submodule(external/json)
 
 add_subdirectory(src)
+add_subdirectory(external)
 add_subdirectory(configured)
 add_subdirectory(app)
 
