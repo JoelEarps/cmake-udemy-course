@@ -15,6 +15,7 @@ set(EXE_NAME "Joels_App")
 
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
 include(Add_Git_SM)
+include(Docs)
 include(FetchContent)
 
 FetchContent_Declare(

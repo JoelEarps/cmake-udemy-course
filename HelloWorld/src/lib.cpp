@@ -6,6 +6,10 @@
 #include <fmt/format.h>
 #include <spdlog/spdlog.h>
 
+/**
+ * @brief
+ * Prints out Library Package info
+*/
 
 void print_hello_world()
 {
